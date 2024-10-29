@@ -4,6 +4,15 @@
 *{
   font-family: "Work Sans", serif;
 }
+.btn-primary{
+    border: 0;
+    border-radius: 8px;
+    background-color: #FF900E;
+    font: size 1.25rem;
+    color: #FFF;
+    padding: 20px 25px;
+    cursor: point;
+}
 /*header Style*/
 header{
     background: rgba(255, 144, 14, 0.10);
@@ -11,7 +20,13 @@ header{
 }
 nav{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
 }
 nav ul{
     display: flex;
@@ -26,6 +41,10 @@ nav li a{
     text-decoration: none;
     color: #424242;
 }
+.banner-pic{
+    margin-top: 20px;
+    width: 100%;
+}
 .banner-content{
     max-width: 800px;
     text-align: center;
@@ -38,4 +57,27 @@ nav li a{
 }
 .banner-description{
     color: #727272;
+}
+
+/*Feature section*/
+
+
+/*Responsive section*/
+/*Small devices*/
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/*Medium devices*/
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
