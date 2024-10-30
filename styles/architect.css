@@ -114,6 +114,21 @@ main{
     margin-bottom: 10px;
 }
 
+/*Sponsor section*/
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sponsors-img-container img{
+    width:165px;
+}
+
 
 /*Responsive section*/
 /*Small devices*/
@@ -121,16 +136,20 @@ main{
     header{
         padding: 20px;
     }
-    nav, .feature-container
+    nav, .feature-container, .facts-card-container, .sponsors-img-container
     {
         flex-direction: column;
     }
 .image-container{
     grid-template-columns: 1fr;
 }
-.feature-content{
+.feature-content
+.facts-card-container{
     padding-left: 20px;
     padding-right: 20px;
+}
+.facts-card-container,{
+    gap: 20px;
 }
 }
 /*Medium devices*/
@@ -141,6 +160,7 @@ main{
     nav{
         flex-direction: column;
     }
-    .feature-container{
+    .feature-container, 
+    .sponsors-img-container{
         flex-direction: column };
     }
