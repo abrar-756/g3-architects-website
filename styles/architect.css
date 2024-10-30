@@ -203,9 +203,6 @@ footer{
 .facts-card-container{
     gap: 20px;
 }
-footer{
-    padding: 20px;
-}
 }
 /*Medium devices*/
 @media screen and (min-width:576px) and (max-width:960px) {
